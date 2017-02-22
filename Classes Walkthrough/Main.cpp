@@ -10,10 +10,10 @@ int main()
 	Teacher james = Teacher("james");
 	Course cis17 = Course("CIS17A", ":Programming C++: Objects",james);
 	Student bob = Student("bob");
-	Student jame = Student("jame");
+	Student jane = Student("jane");
 
 	cis17.EnrollStudent(bob, 0);
-	cis17.EnrollStudent(jame, 1);
+	cis17.EnrollStudent(jane, 1);
 
 	cout << cis17.GetClassInfo() << endl;
 
