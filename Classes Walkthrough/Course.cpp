@@ -22,3 +22,27 @@ bool Course::EnrollStudent(Student newStudent, int position)
 	
 	return true;
 }
+
+string Course::GetClassInfo()
+{
+	string info = "Course Information for " + _name + "\n";
+	info += _description;
+	info += "------------------------------------";
+	info += "\n";
+	// auto stands in for "Student" in "Student student"
+	// loop will iterate over student
+	for (auto student : _students) 
+	{
+		if (student.GetName() != "Null")
+		{
+			info += student.GetName() = "\n";
+		}
+		return info;
+	}
+	
+	/*
+	for (int i = 0; i <= _student.length; i++) {
+		Student thisStudent = ;
+	}
+	*/
+}
